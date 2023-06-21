@@ -158,6 +158,49 @@ All times are <a href="https://en.wikipedia.org/wiki/Anywhere_on_Earth">Anywhere
 
 <h2 id="invited">Invited speaker</h2>
 <a href="https://foones.github.io/">Pablo Barenbaum</a> &ndash; Universidad de Buenos Aires, Argentina
+
+<p>
+
+<b>Title:</b><br>
+Useful Evaluation, Compositionally and Quantitatively
+
+<p>
+
+<b>Abstract:</b><br>
+The question of measuring the complexity of functional programming languages
+(mathematically modeled by the lambda-calculus) in a machine-independent way
+has a long history. In particular, well-known implementation techniques turn to
+be unreasonable, in the sense of van Emde Boas' Invariance Thesis. Indeed, the
+evaluation of expressions in functional programming languages may lead to an
+exponential explosion in size. A significant contribution to this topic is due
+to Accattoli and Dal Lago, who proposed a reasonable cost model for functional
+programming languages, called useful evaluation. This implementation technique
+uses directed acyclic graphs providing succint representations of expressions
+by means of sharing subterms. In such a way, exponential size explosion can be
+avoided, by copying shared subterms only when this contributes to a certain
+(well-defined notion of) progress of the computation. The existing notions of
+useful evaluation in the literature were defined in an ad-hoc (non inductive
+and not compositional) way. Indeed, they are not characterized by local
+predicates, but rather by means of side conditions of a global nature. This
+makes it hard to reason about them using inductive arguments.  Moreover, no
+quantitative models or tools exist to measure the time complexity of useful
+evaluation.<br><br>
+
+In this joint work with Delia Kesner and Mariana Milicich we provide the first
+inductive specification of useful evaluation for open call-by-value. This is
+achieved by indexing the notion of evaluation by different parameters
+representing the relevant information concerning the surrounding evaluation
+contexts. We relate our new specification of usefulness to a natural
+specification of open call-by-value that does not implement useful evaluation,
+showing in particular that both compute the same normal forms. Most
+importantly, we provide a model for the useful call-by-value evaluation
+strategy, which is formulated by means of a type system, based on intersection
+types. This turns out to be the first model for a notion of useful evaluation.
+Moreover, by taking intersection types to be non-idempotent, and the typing
+rules to be tight, the resulting model is quantitative, in the sense that
+typing derivations provide information about the exact number of computation
+steps required to evaluate the terms.
+
 <hr/>
 
 <!--
@@ -203,7 +246,7 @@ Welcome
 </li>
 <li>14:06 &ndash;
 <a href="https://foones.github.io/">Pablo Barenbaum</a> (invited talk) &ndash;
-TBA</li>
+Useful Evaluation, Compositionally and Quantitatively</li>
 <li>
 15:06 &ndash;
 <a href="http://solweb.mydns.jp/hamana/">Makoto Hamana</a> &ndash;
